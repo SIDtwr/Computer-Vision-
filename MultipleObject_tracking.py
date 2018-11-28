@@ -62,7 +62,7 @@ while True:
 	# grab the current frame, then handle if we are using a
 	# VideoStream or VideoCapture object
 	frame = vs.read()
-	frame = cv2.resize(frame, (2000, 2000), interpolation=cv2.INTER_LINEAR)
+	#frame = cv2.resize(frame, (2000, 2000), interpolation=cv2.INTER_LINEAR)
 	frame = frame[1] if args.get("video", False) else frame
 
 	# check to see if we have reached the end of the stream

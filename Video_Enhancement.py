@@ -25,7 +25,7 @@ def noisy(noise_typ,image):
        print("passed wrong argument to the function")
 
 
-cap = cv2.VideoCapture('/SampleVideo2.flv')
+cap = cv2.VideoCapture('SampleVideo.mp4')
 
 while(cap.isOpened()):
     ret, frame = cap.read()

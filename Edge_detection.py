@@ -22,9 +22,9 @@ while (True):
     # img = frame = cv2.blur(frame, (kernelSize, kernelSize))  # Average Blur smoothing filter
     # img = frame = cv2.bilateralFilter(frame, 9, 75, 75)  # Bilateral Filter for smoothing filter
 
-    # img = cv2.Canny(frame, parameter1, parameter2, intApertureSize)  # Canny edge detection
+    img = cv2.Canny(frame, parameter1, parameter2, intApertureSize)  # Canny edge detection
     # img = cv2.Laplacian(frame,cv2.CV_64F) # Laplacian edge detection
-    img = cv2.Sobel(frame,cv2.CV_64F,1,0,ksize=kernelSize) # X-direction Sobel edge detection
+    # img = cv2.Sobel(frame,cv2.CV_64F,1,0,ksize=kernelSize) # X-direction Sobel edge detection
     # img = cv2.Sobel(frame,cv2.CV_64F,0,1,ksize=kernelSize) # Y-direction Sobel edge detection
 
     # convert to Gray_Scale
